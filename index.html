@@ -9,12 +9,60 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1>Portfolio</h1>
+    <nav class="nav"> 
+      <ul>
+          <li><a class="active" href="#header">Home</a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#email">Email</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+  <section alt="A photo of the author's dog, Macareno">
+    <img class="mac" src="./assets/images/IMG_3892.jpg">
+  </section>
   </header>
-  <main>
-    <hr>
-  </main>
 
+  <section>
+    <h3 id="aboutMe">
+      About Me
+    </h3>
+    <p>
+      Studied European history at Hood College, worked in the print technologies sector for ten years, and now studying to be a web dev. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis architecto, minus quam obcaecati vitae sed iste veniam in. Voluptatem odio dicta molestias ut praesentium iure, dolores recusandae pariatur autem.
+    </p>
+  </section>
+  <section class="projects">
+    <h3 id="work">
+      Work
+    </h3>
+    <img class="projectImages" src="https://placehold.co/600x400"
+      title="Rock, Paper, Scissors">
+    <img class="projectImages" src="https://placehold.co/300x200"
+    title="Password Generator">
+    <img class="projectImages" src="https://placehold.co/300x200"
+    title="project 3">
+  </section>
+  <section>
+    <form>
+      <fieldset>
+        <legend id="email">Mailing List</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="yourEmail@example.com"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </section>
+  <footer class="footer">
+    <h6 id="contact">contact</h6>
+    <a href="mailto: abc@example.com">abc@example.com</a>
+  </footer>
 </body>
 </html>

@@ -1,4 +1,113 @@
+
 body {
-  background-image: linear-gradient(to left, #2f32db, #0492e4);
+  background-image: linear-gradient(to left, #a1afff, #0492e4);
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1{
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  color: gold;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.nav{
+  margin-left: auto;
+}
+.nav ul {
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  background-color: #111;
+}
+
+.mac {
+  display: flex;
+  max-width: 75vw;
+}
+
+#aboutMe {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 50px;
+  font-size: 18px;
+  color: rgb(2, 0, 128);
+}
+
+#work {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  color: rgb(2, 0, 128);
+  flex-grow: 1;
+}
+
+.projectImages {
+  /* border-style: solid; */
+  /* border-color: red; */
+}
+.projects {
+  /* border-style: solid; */
+  /* border-color: rgb(0, 255, 34); */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background: #111111;
+    color: white
+  }
+  #work {
+    color: greenyellow
+  }
+  #aboutMe {
+    color: greenyellow
+  }
+  .projectImages {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: #8ac4ff;
+  }
+  .projectImages {
+    width: 100vw;
+  }
 }
